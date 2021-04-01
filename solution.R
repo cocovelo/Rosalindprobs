@@ -10,11 +10,17 @@ df <- data.frame(split)
 ## number of rows in df
 nrow(df)
 
-## create if-else for loop
+## create vector of characters for results
+result <- vector(mode = "character", length = 23)
+
+##store results in 'result'
 for(i in 1:23) {
   if(df[i,] != "T") {
-    print(df[i,])
+    result[i] <- print(df[i,])
   } else {
-    print("U")
+    result[i] <- print("U")
     }
 }
+
+##concatenate results
+c(result, collapse = "")

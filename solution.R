@@ -11,10 +11,10 @@ df <- data.frame(split)
 nrow(df)
 
 ## create vector of characters for results
-result <- vector(mode = "character", length = 23)
+result <- vector(mode = "character", length = nrow(df))
 
 ##store results in 'result'
-for(i in 1:23) {
+for(i in 1:nrow(df)) {
   if(df[i,] != "T") {
     result[i] <- print(df[i,])
   } else {

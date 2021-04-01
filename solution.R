@@ -24,3 +24,6 @@ for(i in 1:23) {
 
 ##paste result and remove ""
 rna <- paste(result, collapse = "")
+
+##print contents of rna
+rna

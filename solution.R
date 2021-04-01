@@ -22,5 +22,5 @@ for(i in 1:23) {
     }
 }
 
-##concatenate results
-c(result, collapse = "")
+##paste result and remove ""
+rna <- paste(result, collapse = "")
